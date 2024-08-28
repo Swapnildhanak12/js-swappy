@@ -32,7 +32,7 @@ const value=682792807694784774n;  // type: Object
 //Array
 let ab=['swapnil','swaroop','kiran']
 
-console.log( typeof ab);  // Type of Array is Object
+// console.log( typeof ab);  // Type of Array is Object
 
 //Object
 
@@ -43,14 +43,36 @@ let sd={
     married: false
 
 }
-console.log(typeof sd); // Typeof Object is Object
+// console.log(typeof sd); // Typeof Object is Object
 
 // Function
 let sp= function(){
     console.log("Hello World");
 }
 
-console.log(typeof sp);  // Type of function is Function Object
+// console.log(typeof sp);  // Type of function is Function Object
 
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+// Types of memory
+// Stack Memory  Heap Memory
 
+/* Stack memory gives the copy of the code And Heap memory Gives the reference 
+//the changes that are perform  as a child code it directly change the main value i.e parent value.*/
+
+let num=18;
+let num1=num;
+// console.log("The value of Num is "+num)
+num1=19;
+// console.log(num)
+// console.log(num1)
+
+let ap={
+    height:18,
+    weight:40,
+    city:"Pune"
+}
+let px=ap;
+px.city="Mumbai";
+console.log(ap.city)
+console.log(px.city)
